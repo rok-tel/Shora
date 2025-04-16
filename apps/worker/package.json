@@ -1,0 +1,26 @@
+{
+  "name": "@shora/worker",
+  "version": "1.0.0",
+  "description": "Worker application for Shora financial blog platform",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "generate": "node dist/index.js"
+  },
+  "dependencies": {
+    "@shora/common": "1.0.0",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^3.3.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "@types/node-cron": "^3.0.7",
+    "@types/winston": "^2.4.4"
+  }
+}
