@@ -1,7 +1,7 @@
 import * as functions from 'firebase-functions';
-import { DBClient } from '@common/firebase/dbClient';
+import { FirebaseDB } from '@common/firebase/dbClient';
 
-const articlesDB = new DBClient('articles');
+const articlesDB = new FirebaseDB('articles');
 
 export const addArticle = functions.https.onRequest(async (req, res) => {
   if (req.method !== 'POST') {

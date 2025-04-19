@@ -12,8 +12,8 @@
       "build:web": "cd apps/web && yarn build",
       "build:api": "cd apps/api && yarn build",
       "build:worker": "cd apps/worker && yarn build",
-      "copy:next": "rm -rf apps/api/.next && cp -r apps/web/.next apps/api/.next",
-      "build": "yarn build:common && yarn build:web && yarn build:api && yarn copy:next"
+      "dev:web": "cd apps/web && yarn dev",
+      "build": "yarn build:common && yarn build:web"
     },
     "devDependencies": {
       "typescript": "^5.0.4",

@@ -1,7 +1,4 @@
-export interface Language {
-  code: 'en' | 'he';
-  name: string;
-}
+export type Language = 'en' | 'he';
 
 export interface LocalizedContent {
   title: string;
@@ -10,7 +7,7 @@ export interface LocalizedContent {
 }
 
 export type LocalizedContentMap = {
-  [key in 'en' | 'he']: LocalizedContent;
+  [key in Language]: LocalizedContent;
 };
 
 export interface Timestamp {
@@ -22,5 +19,11 @@ export interface Timestamp {
 export type UserRole = 'user' | 'admin';
 
 export interface DBDocument {
-  id: string;
+  id?: string;
+}
+
+export interface IDBClient {
+  getAll(): Promise<DBDocument[]>;
+  getById(id: string): Promise<DBDocument | null>;
+  create(obj: DBDocument): Promise<string>;
 }

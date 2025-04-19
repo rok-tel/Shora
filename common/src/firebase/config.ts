@@ -2,6 +2,10 @@ import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
 import { Firestore, getFirestore } from 'firebase/firestore';
 import { getAuth, Auth } from 'firebase/auth';
 import { FirebaseStorage, getStorage } from 'firebase/storage';
+import { loadEnv } from '../utils/loadEnv';
+
+// Load environment variables
+loadEnv();
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -21,6 +25,4 @@ const db: Firestore = getFirestore(app);
 const auth: Auth = getAuth(app);
 const storage: FirebaseStorage = getStorage(app);
 
-export { app, db, auth, storage, firebaseConfig };
-
-export default firebaseConfig;
+export { app, db, auth, storage };

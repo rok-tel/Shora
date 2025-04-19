@@ -1,3 +1,4 @@
+import { IDBClient } from '@shora/common/models/types';
 import { db } from './config';
 import { 
   collection, 
@@ -22,11 +23,12 @@ import {
   serverTimestamp
 } from 'firebase/firestore';
 
-export class DBClient {
+export class FirebaseDBClient implements IDBClient {
   private collectionName: string;
   private collectionRef: CollectionReference;
 
   constructor(collectionName: string) {
+    console.log("[FirebaseDBClient] Initializing with:", collectionName); 
     this.collectionName = collectionName;
     this.collectionRef = collection(db, collectionName);
   }

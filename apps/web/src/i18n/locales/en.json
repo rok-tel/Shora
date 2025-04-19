@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Home",
+    "articles": "Articles",
+    "stocks": "Stocks",
+    "benefits": "Benefits",
+    "admin": "Admin"
+  },
+  
+  "home": {
+    "latest": "Latest News",
+    "trending": "Trending Stocks",
+    "benefits": {
+      "title": "Subscriber Benefits",
+      "desc": "Join our premium membership for exclusive financial insights"
+    }
+  },
+  
+  "benefits": {
+    "title": "Premium Subscriber Benefits",
+    "item1": "Real-time stock alerts",
+    "item2": "Expert financial analysis",
+    "item3": "Exclusive webinars and events",
+    "item4": "Personalized investment recommendations",
+    "subscribe": "Subscribe Now"
+  },
+  
+  "stocks": {
+    "title": "Market Explorer",
+    "description": "Track global markets and investment opportunities",
+    "search": "Search stocks...",
+    "marketOverview": "Market Overview",
+    "sectors": "Sectors Performance",
+    "popularStocks": "Popular Stocks",
+    "symbol": "Symbol",
+    "price": "Price",
+    "change": "Change",
+    "volume": "Volume",
+    "marketCap": "Market Cap",
+    "categories": {
+      "topStocks": "Top Stocks",
+      "crypto": "Crypto",
+      "indices": "Indices",
+      "watchlist": "My Watchlist"
+    }
+  },
+  
+  "stock": {
+    "price": "Current Price",
+    "change": "Change",
+    "high": "Day High",
+    "low": "Day Low",
+    "volume": "Volume",
+    "relatedNews": "Related News"
+  },
+  
+  "article": {
+    "relatedStocks": "Related Stocks",
+    "publishedOn": "Published on",
+    "readMore": "Read More"
+  },
+  
+  "admin": {
+    "title": "Article Management",
+    "new": "New Article",
+    "edit": "Edit Article",
+    "delete": "Delete Article"
+  },
+  
+  "footer": {
+    "followUs": "Follow Us",
+    "copyright": "Copyright © 2025 FinVerse Insight. All rights reserved.",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
+  }
+}

@@ -2,7 +2,6 @@ import { DBDocument, LocalizedContentMap, Timestamp } from './types';
 import { StockReference } from './Stock';
 
 export interface Article extends DBDocument {
-  slug: string;
   content: LocalizedContentMap;
   imageUrl: string;
   stockKeywords: StockReference[];

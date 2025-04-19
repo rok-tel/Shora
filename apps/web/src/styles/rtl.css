@@ -1,0 +1,74 @@
+/* RTL-specific styles */
+[dir="rtl"] {
+  /* Text alignment */
+  text-align: right;
+  
+  /* Flexbox direction */
+  .flex-row {
+    flex-direction: row-reverse;
+  }
+  
+  /* Grid direction */
+  .grid-cols-2 {
+    direction: rtl;
+  }
+  
+  /* Margins and paddings */
+  .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  .pl-4 {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  
+  .pr-4 {
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+  
+  /* Borders */
+  .border-l {
+    border-left: none;
+    border-right: 1px solid;
+  }
+  
+  .border-r {
+    border-right: none;
+    border-left: 1px solid;
+  }
+  
+  /* Icons and arrows */
+  .arrow-right {
+    transform: scaleX(-1);
+  }
+  
+  /* Input fields */
+  input, textarea, select {
+    text-align: right;
+  }
+  
+  /* Lists */
+  ul, ol {
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+  
+  /* Navigation */
+  nav a {
+    text-align: right;
+  }
+  
+  /* Dropdowns */
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+} 
